@@ -4,6 +4,10 @@ This repository contains code that provides insights and examples of new feature
 
 ## Overview
 
+### Developer Documentation
+
+Find the developer documentation [here.](./DEVELOPER.md)
+
 ### Releases
 
 Table of Contents:
