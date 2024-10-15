@@ -1,0 +1,33 @@
+{
+    "name": "Base Terraform Container",
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "args": {
+            "VERSION": "1.10.0-alpha20241009",
+            "TFLINT": "latest",
+            "TERRAGRUNT": "none"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnPaste": false, // required
+                "editor.formatOnType": false, // required
+                "editor.formatOnSave": true, // optional
+                "editor.tabSize": 4, // Set to 4 spaces (or 2 depending on your style guide)
+                "editor.insertSpaces": true, // Converts tabs to spaces
+                "editor.detectIndentation": false,
+                "editor.formatOnSaveMode": "file", // required to format on save
+                "editor.rulers": [
+                    120
+                ], // Adds a ruler at 120 characters
+                "editor.wordWrap": "off", // No wrapping, forces hard limit at ruler
+                "prettier.printWidth": 120, // For Prettier users, set the max length for formatting
+                "files.autoSave": "off" // optional but recommended
+            },
+            "extensions": [
+                "hashicorp.terraform"
+            ]
+        }
+    }
+}
