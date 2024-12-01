@@ -1,11 +1,10 @@
 {
     "name": "Base Terraform Container",
-    "build": {
-        "dockerfile": "./Dockerfile",
-        "args": {
-            "VERSION": "1.10.0-alpha20241009",
-            "TFLINT": "latest",
-            "TERRAGRUNT": "none"
+    "features": {
+        "terraform": {
+            "version": "1.10",
+            "tflint": "latest",
+            "terragrunt": "none"
         }
     },
     "customizations": {
